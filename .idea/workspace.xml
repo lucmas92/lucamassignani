@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="55d4cb97-0b07-45cc-8daa-927228cb934c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/lucamassignani.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/lucamassignani.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
@@ -31,6 +32,9 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\var\www\html\lucamassignani" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\var\www\html\lucamassignani\css" />
     </key>
@@ -44,7 +48,7 @@
       <option name="presentableId" value="Default" />
       <updated>1617718158839</updated>
       <workItem from="1617718160888" duration="603000" />
-      <workItem from="1617720541120" duration="228000" />
+      <workItem from="1617720541120" duration="2699000" />
     </task>
     <servers />
   </component>
