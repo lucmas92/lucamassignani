@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="55d4cb97-0b07-45cc-8daa-927228cb934c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/cookie.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/contact.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
@@ -48,7 +49,7 @@
       <option name="presentableId" value="Default" />
       <updated>1617718158839</updated>
       <workItem from="1617718160888" duration="603000" />
-      <workItem from="1617720541120" duration="5409000" />
+      <workItem from="1617720541120" duration="6652000" />
     </task>
     <task id="LOCAL-00001" summary="fix animation">
       <created>1617741016393</created>
@@ -78,7 +79,21 @@
       <option name="project" value="LOCAL" />
       <updated>1617743816304</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="fix contact form required">
+      <created>1617744730654</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1617744730654</updated>
+    </task>
+    <task id="LOCAL-00006" summary="fix contact form required">
+      <created>1617744886644</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1617744886644</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -99,6 +114,7 @@
     <MESSAGE value="fix animation" />
     <MESSAGE value="add contact form" />
     <MESSAGE value="fix contact form" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix contact form" />
+    <MESSAGE value="fix contact form required" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix contact form required" />
   </component>
 </project>
