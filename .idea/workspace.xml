@@ -4,6 +4,7 @@
     <list default="true" id="55d4cb97-0b07-45cc-8daa-927228cb934c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/contact.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +48,7 @@
       <option name="presentableId" value="Default" />
       <updated>1617718158839</updated>
       <workItem from="1617718160888" duration="603000" />
-      <workItem from="1617720541120" duration="4545000" />
+      <workItem from="1617720541120" duration="5409000" />
     </task>
     <task id="LOCAL-00001" summary="fix animation">
       <created>1617741016393</created>
@@ -70,15 +71,34 @@
       <option name="project" value="LOCAL" />
       <updated>1617743569744</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="fix contact form">
+      <created>1617743816304</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1617743816304</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="fix animation" />
     <MESSAGE value="add contact form" />
-    <option name="LAST_COMMIT_MESSAGE" value="add contact form" />
+    <MESSAGE value="fix contact form" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix contact form" />
   </component>
 </project>
