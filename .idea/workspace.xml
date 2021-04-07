@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="55d4cb97-0b07-45cc-8daa-927228cb934c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/cookie.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/contact.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cookie.html" beforeDir="false" afterPath="$PROJECT_DIR$/cookie.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +47,8 @@
       <option name="presentableId" value="Default" />
       <updated>1617718158839</updated>
       <workItem from="1617718160888" duration="603000" />
-      <workItem from="1617720541120" duration="6652000" />
+      <workItem from="1617720541120" duration="6989000" />
+      <workItem from="1617795031519" duration="1565000" />
     </task>
     <task id="LOCAL-00001" summary="fix animation">
       <created>1617741016393</created>
@@ -93,7 +92,35 @@
       <option name="project" value="LOCAL" />
       <updated>1617744886644</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="fix vari">
+      <created>1617745947483</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1617745947483</updated>
+    </task>
+    <task id="LOCAL-00008" summary="fix form width">
+      <created>1617746243915</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1617746243915</updated>
+    </task>
+    <task id="LOCAL-00009" summary="fix home text">
+      <created>1617795084240</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1617795084240</updated>
+    </task>
+    <task id="LOCAL-00010" summary="fix cookie style">
+      <created>1617795508937</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1617795508937</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -109,12 +136,17 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="fix animation" />
     <MESSAGE value="add contact form" />
     <MESSAGE value="fix contact form" />
     <MESSAGE value="fix contact form required" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix contact form required" />
+    <MESSAGE value="fix vari" />
+    <MESSAGE value="fix form width" />
+    <MESSAGE value="fix home text" />
+    <MESSAGE value="fix cookie style" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix cookie style" />
   </component>
 </project>
