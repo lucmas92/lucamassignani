@@ -3,7 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="55d4cb97-0b07-45cc-8daa-927228cb934c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/contact.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cookie.html" beforeDir="false" afterPath="$PROJECT_DIR$/cookie.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +51,11 @@
       <updated>1617718158839</updated>
       <workItem from="1617718160888" duration="603000" />
       <workItem from="1617720541120" duration="6989000" />
-      <workItem from="1617795031519" duration="1565000" />
+      <workItem from="1617795031519" duration="1673000" />
+      <workItem from="1617820321080" duration="745000" />
+      <workItem from="1617821906642" duration="606000" />
+      <workItem from="1617825020252" duration="19000" />
+      <workItem from="1617826146717" duration="1756000" />
     </task>
     <task id="LOCAL-00001" summary="fix animation">
       <created>1617741016393</created>
@@ -120,7 +127,21 @@
       <option name="project" value="LOCAL" />
       <updated>1617795508937</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="fix cookie style">
+      <created>1617797516778</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1617797516778</updated>
+    </task>
+    <task id="LOCAL-00012" summary="fix cookie style">
+      <created>1617797535888</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1617797535888</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
