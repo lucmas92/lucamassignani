@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
+  <!--  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">-->
+
+  <!--  <link rel="stylesheet" href="css/main.css">-->
+  <link rel="stylesheet" href="css/tailwind.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+
+  <style>
+    .pagination li a {
+      padding: 10px 20px 10px 20px;
+      border: 1px solid #DDD !important
+    }
+
+    .pagination li:hover a, .pagination li.active a {
+      color: white !important;
+      /*border: 1px solid #F75940 !important*/
+    }
+  </style>
+</head>
+
+<body class="pb-24 bg-white" style="overflow-x: hidden">
+<aside id="colorlib-aside" role="complementary" class="border-r" style="overflow: hidden">
+  <i id="closeMenu" class="fas fa-times absolute right-6 top-4 md:hidden cursor-pointer"></i>
+  <h1 id="colorlib-logo"><a href="index.html"><span>lu</span><span>ca</span></a></h1>
+  <nav id="colorlib-main-menu" role="navigation">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li class="colorlib-active"><a href="work.html">Work</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="colorlib-footer">
+    <p><small>
+      Copyright &copy;<script>document.write(new Date().getFullYear());</script>
+      <br> All rights reserved
+      <br> This template is made with <i class="fas fa-heart" aria-hidden="true"></i>
+      <br> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+
+    </small></p>
+    <ul>
+      <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+      <li><a href="#"><i class="fab fa-instagram-square"></i></a></li>
+      <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+    </ul>
+  </div>
+</aside>
+
+<div class="w-full bg-white z-30 fixed md:hidden px-4 py-4 shadow-lg">
+  <i id="toggleMenu" class="fas fa-bars cursor-pointer"></i>
+</div>
+
+<div class="grid grid-cols-2 px-2 md:px-0 pt-24 md:pt-14">
+  <div class="md:w-1/2">
+    <span class="heading-meta">Portfolio</span>
+    <h2 data-aos="fade-right" class="colorlib-heading">RECENT WORK</h2>
+  </div>
+  <div class="flex justify-end">
+    <div class="mx-2">
+
+      <a href="https://github.com/lucmas92" data-aos="fade-left" data-aos-offset="300"
+         class="bg-white text-gray-800 font-semibold py-2 px-4 border border-gray-400 inline-flex items-center">
+        <img src="img/github2.png" class="w-8 h-8 mr-2">
+        <span>Show on GitHub</span>
+      </a>
+    </div>
+  </div>
+</div>
+
+<div id="userRepos" class="px-2 md:px-0 grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-8">
+  <div id="loadingRepos"><img src="img/loading.gif" class="h-16" alt=""></div>
+</div>
+
+<div class="mt-14">
+  <ul class="pagination flex flex-row">
+    <li class="disabled"><a href="#">«</a></li>
+    <li class="active"><a href="#">1</a></li>
+    <li><a href="#">»</a></li>
+  </ul>
+</div>
+
+<script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
+

@@ -15,38 +15,207 @@
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
 
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/tailwind.min.css">
-  <link rel="stylesheet" href="css/main.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
+  <!--  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">-->
+
+  <!--  <link rel="stylesheet" href="css/main.css">-->
+  <link rel="stylesheet" href="css/tailwind.css">
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
 
   <style>
-    body {
-      margin: 0 !important;
-      paddign: 0 !important;
-      height: 100vh !important;
+    .slider div {
+      background-position: center center;
+      background-size: cover;
     }
   </style>
 </head>
-<body>
 
-<div class="bg-white flex flex-col justify-center items-center h-screen">
-    <h1 class="text-5xl" data-aos="fade-left" data-aos-duration="2000">Coming soon</h1>
-    <p class="uppercase" data-aos="fade-up" data-aos-delay="300">
-      We are under construction and almost ready!
-    </p>
-  <img src="https://i.stack.imgur.com/z3l08.gif">
+<body class=" bg-white" style="overflow-x: hidden">
+<aside id="colorlib-aside" role="complementary" class="border-r" style="overflow: hidden">
+  <i id="closeMenu" class="fas fa-times absolute right-6 top-4 md:hidden cursor-pointer"></i>
+  <h1 id="colorlib-logo"><a href="index.html"><span>Lu</span><span>ca</span></a></h1>
+  <nav id="colorlib-main-menu" role="navigation">
+    <ul>
+      <li class="colorlib-active"><a href="index.html">Home</a></li>
+      <li><a href="work.html">Work</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="colorlib-footer">
+    <p><small>
+      <a href="https://www.freepik.com/vectors/digital">Digital vector created by freepik - www.freepik.com</a>
+      Copyright &copy;<script>document.write(new Date().getFullYear());</script>
+      <br> All rights reserved
+      <br> This template is made with <i class="fas fa-heart" aria-hidden="true"></i>
+      <br> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
 
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init(
-      {
-        duration: 1000
-      }
-    );
-  </script>
+    </small></p>
+    <ul>
+      <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+      <li><a href="#"><i class="fab fa-instagram-square"></i></a></li>
+      <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+    </ul>
+  </div>
+</aside>
+
+<div class="w-full bg-white z-30 fixed md:hidden px-4 py-4 shadow-lg">
+  <i id="toggleMenu" class="fas fa-bars cursor-pointer"></i>
+</div>
+
+<div class="flex flex-col items-center pt-14 md:pt-0">
+  <div class="slider w-full bg-white overflow-x-hidden flex snap-x" style="height:80vh; overflow: hidden">
+    <div data-aos="fade-right" id="slide-1"
+         style="background-image: url('img/img4.jpg')"
+         class="snap-start w-full h-full flex items-center justify-center text-white text-2xl lg:text-4xl font-bold flex-shrink-0 bg-gray-200 relative">
+      <div data-aos="fade-up" class="desc text-center border shadow-md w-3/4 lg:w-1/2 xl:w-2/5 bg-white absolute text-black p-2"
+           style="left: 1rem; bottom:1rem; padding:30px">
+        <h1 class="mb-0">I build things for the web.</h1>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="px-2 md:px-0 grid grid-cols-1 lg:grid-cols-2 gap-y-5 lg:gap-y-0 lg:gap-x-5 py-48 align-items-center">
+  <div class="">
+    <div data-aos="fade-right" class="about-img" style="background-image: url('img/img5.jpg');">
+      <div data-aos="fade-left" class="z-20 about-img-2" data-aos-delay="300"
+           style="background-image: url('img/img3.jpg');"></div>
+    </div>
+  </div>
+  <div class="" data-aos="fade-right" data-aos-delay="300">
+    <div class="about-desc">
+      <span class="heading-meta">Welcome &amp; Introduce</span>
+      <h3>Hola! my name is Luca Massignani!</h3>
+      <p>I build things for the web. I'm a software engineer who specializes in building (and occasionally designing)
+        exceptional digital experiences. I currently work at Sanmarcoinformatica since 2017</p>
+    </div>
+    <div class="fancy-collapse-panel hidden">
+      <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="headingOne">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true"
+                 aria-controls="collapseOne">Why choose me?
+              </a>
+            </h4>
+          </div>
+          <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+            <div class="panel-body">
+              <div class="row">
+                <div class="col-md-6">
+                  <p>
+                    I'm a full-stack developer specializing in Laravel and VueJS development.
+                  </p>
+                </div>
+                <div class="col-md-6">
+                  <p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language
+                    ocean.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="bg-white flex px-2 mt-48 pt-12 md:px-0">
+  <div class="md:w-1/2">
+    <span class="heading-meta">What I do?</span>
+    <h2 data-aos="fade-right" class="colorlib-heading">Here are some of my skills</h2>
+  </div>
+</div>
+
+
+<div class="bg-white grid grid-cols-1 lg:grid-cols-2 lg:gap-x-5 px-2 md:px-0 pb-14 mb-48 ">
+  <div class="">
+    <div class="colorlib-feature" data-aos="fade-right" data-aos-delay="300" data-aos-offset="100">
+      <div class="colorlib-icon">
+        <img src="img/work.jpg" alt="">
+      </div>
+      <div class="colorlib-text">
+        <h3>Java</h3>
+      </div>
+    </div>
+    <div class="colorlib-feature" data-aos="fade-right" data-aos-delay="300" data-aos-offset="100">
+      <div class="colorlib-icon">
+        <img src="img/work.jpg" alt="">
+      </div>
+      <div class="colorlib-text">
+        <h3>Python</h3>
+      </div>
+    </div>
+    <div class="colorlib-feature" data-aos="fade-right" data-aos-delay="300" data-aos-offset="100">
+      <div class="colorlib-icon">
+        <img src="img/work.jpg" alt="">
+      </div>
+      <div class="colorlib-text">
+        <h3>PHP</h3>
+        <p>
+          LARAVEL FRAMEWORK
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="">
+    <div class="colorlib-feature" data-aos="fade-right" data-aos-delay="300" data-aos-offset="100">
+      <div class="colorlib-icon">
+        <img src="img/work.jpg" alt="">
+      </div>
+      <div class="colorlib-text">
+        <h3>JavaScript</h3>
+      </div>
+    </div>
+    <div class="colorlib-feature" data-aos="fade-right" data-aos-delay="300" data-aos-offset="100">
+      <div class="colorlib-icon">
+        <img src="img/work.jpg" alt="">
+      </div>
+      <div class="colorlib-text">
+        <h3>Vuejs</h3>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="flex px-2 md:px-0">
+  <div class="md:w-1/2">
+    <span class="heading-meta">My work</span>
+    <h2 data-aos="fade-right" class="colorlib-heading">RECENT WORK</h2>
+  </div>
 
 </div>
+
+<div id="userRepos" class="px-2 md:px-0 grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-8">
+  <div id="loadingRepos"><img src="img/loading.gif" class="h-16" alt=""></div>
+</div>
+
+<div id="get-in-touch" class="bg-white py-48">
+  <div class="colorlib-narrow-content">
+    <div class="flex">
+      <div class="w-full md:w-1/2" data-aos="fade-right">
+        <h2 class="heading-meta">GET IN TOUCH</h2>
+      </div>
+    </div>
+    <div class="flex">
+      <div class="w-full md:w-1/2" data-aos="fade-right" data-aos-delay="300">
+        <p class="colorlib-lead">Interested in working together? We should queue up a chat. I’ll buy the coffee.</p>
+        <p><a href="contact.html" class="cursor-pointer btn btn-primary btn-send-message my-2 mx-0 lg:mx-2">Contact me!</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
 
+<!--npx tailwindcss-cli@latest build ./css/style.css -o ./css/tailwind.css-->

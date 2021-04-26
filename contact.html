@@ -15,313 +15,121 @@
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
 
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/tailwind.min.css">
-  <link rel="stylesheet" href="css/main.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
+  <!--  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">-->
+
+  <!--  <link rel="stylesheet" href="css/main.css">-->
+  <link rel="stylesheet" href="css/tailwind.css">
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
-  <style>
-    .gradient {
-      background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
-    }
-  </style>
 
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-
-  <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
 </head>
 
-<body class="leading-normal tracking-normal text-white gradient">
-<!--Nav-->
-<nav id="header" class="fixed w-full z-30 top-0 text-white" x-data="{ isOpen: false }" >
-  <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
-    <div class="pl-4 flex items-center">
-      <a class="toggleColour text-white no-underline hover:no-underline font-bold text-2xl lg:text-4xl"
-         href="index.html">
-        <!--Icon from: http://www.potlabicons.com/ -->
-        <svg class="h-8 fill-current inline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512.005 512.005">
-          <rect fill="#2a2a31" x="16.539" y="425.626" width="479.767" height="50.502" transform="matrix(1,0,0,1,0,0)"/>
-          <path
-            class="plane-take-off"
-            d=" M 510.7 189.151 C 505.271 168.95 484.565 156.956 464.365 162.385 L 330.156 198.367 L 155.924 35.878 L 107.19 49.008 L 211.729 230.183 L 86.232 263.767 L 36.614 224.754 L 0 234.603 L 45.957 314.27 L 65.274 347.727 L 105.802 336.869 L 240.011 300.886 L 349.726 271.469 L 483.935 235.486 C 504.134 230.057 516.129 209.352 510.7 189.151 Z "
-          />
-        </svg>
-        LUCA MASSIGNANI
-      </a>
-    </div>
-    <div class="block lg:hidden pr-4">
-      <button id="nav-toggle" @click="isOpen = !isOpen"
-              class="flex items-center p-1 text-pink-800 hover:text-gray-900 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
-        <svg class="fill-current h-6 w-6" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-          <title>Menu</title>
-          <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/>
-        </svg>
-      </button>
-    </div>
-    <div id="nav-content"
-         :class="isOpen ? 'block' : 'sm:hidden'"
-         class="w-full flex-grow lg:flex lg:items-center lg:w-auto mt-2 lg:mt-0 bg-white lg:bg-transparent text-black p-4 lg:p-0 z-20">
-      <ul class="list-reset lg:flex justify-end flex-1 items-center">
-        <li class="mr-3">
-          <a class="inline-block py-2 px-4 text-black font-bold no-underline" href="index.html">Home</a>
-        </li>
-        <li class="mr-3">
-          <a class="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4"
-             href="contact.html">Contatti</a>
-        </li>
-      </ul>
+<body class="pb-24 bg-white" style="overflow-x: hidden">
+<aside id="colorlib-aside" role="complementary" class="border-r" style="overflow: hidden">
+  <i id="closeMenu" class="fas fa-times absolute right-6 top-4 md:hidden cursor-pointer"></i>
+  <h1 id="colorlib-logo"><a href="index.html"><span>Lu</span><span>ca</span></a></h1>
+  <nav id="colorlib-main-menu" role="navigation">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="work.html">Work</a></li>
+      <li class="colorlib-active"><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="colorlib-footer">
+    <p><small>
+      Copyright &copy;<script>document.write(new Date().getFullYear());</script>
+      <br> All rights reserved
+      <br> This template is made with <i class="fas fa-heart" aria-hidden="true"></i>
+      <br> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+
+    </small></p>
+    <ul>
+      <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+      <li><a href="#"><i class="fab fa-instagram-square"></i></a></li>
+      <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+    </ul>
+  </div>
+</aside>
+
+<div class="w-full bg-white z-30 fixed md:hidden px-4 py-4 shadow-lg">
+  <i id="toggleMenu" class="fas fa-bars cursor-pointer"></i>
+</div>
+
+<div class="px-2 md:px-0">
+
+  <div class="flex pt-24 md:pt-14">
+    <div class="col-md-12">
+      <span class="heading-meta">Read</span>
+      <h2 class="colorlib-heading" data-aos="fade-right" data-aos-duration="1000">Get in Touch</h2>
     </div>
   </div>
-  <hr class="border-b border-gray-100 opacity-25 my-0 py-0"/>
-</nav>
-<!--hero-->
-<div class="pt-24">
-  <div class="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center">
-    <!--Left Col-->
-    <div class="flex flex-col w-full md:w-3/5 justify-center items-start text-center md:text-left">
-      <p class="uppercase tracking-loose w-full">What business are you?</p>
-      <h1 class="my-4 text-5xl font-bold leading-tight">
-        Sono Luca Massignani e sono un Software Engineer </h1>
-      <p class="leading-normal text-2xl mb-8">
-        Progetto, realizza e gestisco software, sistemi, dispositivi e infrastrutture per trasmettere ed elaborare dati
-        e informazioni.
-        Sviluppa componenti hardware e programma software, applicando i principi dell'Information Technology (IT).
-      </p>
+  <div class="grid grid-cols-1 lg:grid-cols-2 pt-14 gap-x-12">
+    <div class="order-1 lg:order-2">
+      <div class="colorlib-feature colorlib-feature-sm" data-aos="fade-right" data-aos-duration="1000"
+           data-aos-delay="100"
+           data-animate-effect="fadeInLeft">
+        <div class="colorlib-icon">
+          <i class="far fa-envelope"></i>
+        </div>
+        <div class="colorlib-text">
+          <p><a href="info@lucamassignani.it">info@lucamassignani.it</a></p>
+        </div>
+      </div>
+      <div class="colorlib-feature colorlib-feature-sm" data-aos="fade-right" data-aos-delay="200">
+        <div class="colorlib-icon">
+          <i class="far fa-map"></i>
+        </div>
+        <div class="colorlib-text">
+          <p>Castelgomberto, 36070 Vicenza, Italia</p>
+        </div>
+      </div>
+      <div class="colorlib-feature colorlib-feature-sm" data-aos="fade-right" data-aos-delay="300">
+        <div class="colorlib-icon">
+          <i class="fas fa-phone"></i>
+        </div>
+        <div class="colorlib-text">
+          <p><a href="tel:3495357197">349.5357197</a></p>
+        </div>
+      </div>
     </div>
-    <!--Right Col-->
-    <div class="w-full md:w-2/5 py-6 text-center">
-      <img
-        data-aos="fade-up"
-        class="shadow-lg md:w-64 md:h-64 w-32 h-32 rounded-full mx-auto"
-        src="img/profile.jpg"
-        alt="" width="384" height="512">
-
+    <div class="order-2 lg:order-1">
+      <div class="row">
+        <form action="">
+          <div class="form-group" data-aos="fade-right" data-aos-delay="200">
+            <input type="text" class="form-control w-full my-2 mx-0 lg:mx-2 px-6" placeholder="Name" required>
+          </div>
+          <div class="form-group" data-aos="fade-right" data-aos-delay="200">
+            <input type="email" class="form-control w-full my-2 mx-0 lg:mx-2 px-6" placeholder="Email" required>
+          </div>
+          <div class="form-group" data-aos="fade-right" data-aos-delay="200">
+            <input type="text" class="form-control w-full my-2 mx-0 lg:mx-2 px-6" placeholder="Phone">
+          </div>
+          <div class="form-group" data-aos="fade-right" data-aos-delay="200">
+            <textarea required name="" id="message" cols="30" rows="7"
+                      class="form-control w-full my-2 mx-0 lg:mx-2 px-6"
+                      placeholder="Message"></textarea>
+          </div>
+          <div class="form-group" data-aos="fade-right" data-aos-delay="200">
+            <input type="submit" class="cursor-pointer btn btn-primary btn-send-message my-2 mx-0 lg:mx-2" value="Send Message">
+          </div>
+        </form>
+      </div>
     </div>
   </div>
 </div>
 
+<iframe class="w-full my-14" height="600px"
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11169.474388526149!2d11.383287892635469!3d45.58313448169059!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477f4a474ebfbdab%3A0x7f90a706e4574ca2!2s36070%20Castelgomberto%20VI!5e0!3m2!1sit!2sit!4v1619127752671!5m2!1sit!2sit"
+  style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 
 
-<section class="bg-white border-b py-8">
-  <div class="container max-w-5xl mx-auto m-8">
-    <!-- Component Code -->
-    <h2 class="text-5xl text-black">Compila il form</h2>
-
-    <div class="grid grid-flow-col">
-
-      <form name="contactForm" class="p-5 lg:p-20" netlify>
-        <div class="flex flex-wrap -mx-3 mb-6">
-          <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
-
-            <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
-              First Name *
-            </label>
-            <input required
-              class="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
-              id="grid-first-name" type="text" name="name" placeholder="Jane">
-          </div>
-          <div class="w-full md:w-1/2 px-3">
-            <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-last-name">
-              Last Name
-            </label>
-            <input
-              class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-              id="grid-last-name" type="text" name="last-name" placeholder="Doe">
-          </div>
-        </div>
-        <div class="flex flex-wrap -mx-3 mb-6">
-          <div class="w-full px-3">
-            <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-email">
-              Email Address *
-            </label>
-            <input required
-              class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-              id="grid-email" type="email" name="email" placeholder="********@*****.**">
-          </div>
-        </div>
-
-        <div class="flex flex-wrap -mx-3 mb-6">
-          <div class="w-full px-3">
-            <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-message">
-              Your Message *
-            </label>
-            <textarea
-
-              class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-              id="grid-message" rows="10" name="message" required></textarea>
-          </div>
-          <div class="flex justify-between w-full px-3">
-            <button
-              class="shadow bg-indigo-600 hover:bg-indigo-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-6 rounded"
-              type="submit">
-              Send Message
-            </button>
-          </div>
-
-        </div>
-
-      </form>
-    </div>
-
-  </div>
-</section>
-<!--Footer-->
-<footer class="bg-white">
-  <div class="container mx-auto px-8">
-    <div class="w-full flex flex-col md:flex-row py-6">
-      <div class="flex-1 mb-6 text-black">
-        <a class="text-pink-600 no-underline hover:no-underline font-bold text-2xl lg:text-4xl" href="index.html">
-          <!--Icon from: http://www.potlabicons.com/ -->
-          <svg class="h-8 fill-current inline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512.005 512.005">
-            <rect fill="#2a2a31" x="16.539" y="425.626" width="479.767" height="50.502"
-                  transform="matrix(1,0,0,1,0,0)"/>
-            <path
-              class="plane-take-off"
-              d=" M 510.7 189.151 C 505.271 168.95 484.565 156.956 464.365 162.385 L 330.156 198.367 L 155.924 35.878 L 107.19 49.008 L 211.729 230.183 L 86.232 263.767 L 36.614 224.754 L 0 234.603 L 45.957 314.27 L 65.274 347.727 L 105.802 336.869 L 240.011 300.886 L 349.726 271.469 L 483.935 235.486 C 504.134 230.057 516.129 209.352 510.7 189.151 Z "
-            />
-          </svg>
-          <br>
-          LUCA MASSIGNANI
-        </a>
-      </div>
-      <div class="flex-1">
-        <p class="uppercase text-gray-500 md:mb-6">Legal</p>
-        <ul class="list-reset mb-6">
-          <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-            <a href="#" class="no-underline hover:underline text-gray-800 hover:text-pink-500">Terms</a>
-          </li>
-          <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-            <a href="cookie.html" class="no-underline hover:underline text-gray-800 hover:text-pink-500">Cookie
-              policy</a>
-          </li>
-        </ul>
-      </div>
-      <div class="flex-1">
-        <p class="uppercase text-gray-500 md:mb-6">Social</p>
-        <ul class="list-reset mb-6">
-          <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-            <a href="#" class="no-underline hover:underline text-gray-800 hover:text-pink-500">Facebook</a>
-          </li>
-          <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-            <a href="#" class="no-underline hover:underline text-gray-800 hover:text-pink-500">Linkedin</a>
-          </li>
-          <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-            <a href="#" class="no-underline hover:underline text-gray-800 hover:text-pink-500">Twitter</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</footer>
-<script>
-  let scrollpos = window.scrollY;
-  let header = document.getElementById("header");
-  let navcontent = document.getElementById("nav-content");
-  let navaction = document.getElementById("navAction");
-  let brandname = document.getElementById("brandname");
-  let toToggle = document.querySelectorAll(".toggleColour");
-
-  document.addEventListener("scroll", function () {
-    /*Apply classes for slide in bar*/
-    scrollpos = window.scrollY;
-
-    if (scrollpos > 10) {
-      header.classList.add("bg-white");
-      navaction.classList.remove("bg-white");
-      navaction.classList.add("gradient");
-      navaction.classList.remove("text-gray-800");
-      navaction.classList.add("text-white");
-      //Use to switch toggleColour colours
-      for (let i = 0; i < toToggle.length; i++) {
-        toToggle[i].classList.add("text-gray-800");
-        toToggle[i].classList.remove("text-white");
-      }
-      header.classList.add("shadow");
-      navcontent.classList.remove("bg-gray-100");
-      navcontent.classList.add("bg-white");
-    } else {
-      header.classList.remove("bg-white");
-      navaction.classList.remove("gradient");
-      navaction.classList.add("bg-white");
-      navaction.classList.remove("text-white");
-      navaction.classList.add("text-gray-800");
-      //Use to switch toggleColour colours
-      for (let i = 0; i < toToggle.length; i++) {
-        toToggle[i].classList.add("text-white");
-        toToggle[i].classList.remove("text-gray-800");
-      }
-
-      header.classList.remove("shadow");
-      navcontent.classList.remove("bg-white");
-      navcontent.classList.add("bg-gray-100");
-    }
-  });
-</script>
-<script>
-  /*Toggle dropdown list*/
-  /*https://gist.github.com/slavapas/593e8e50cf4cc16ac972afcbad4f70c8*/
-
-  let navMenuDiv = document.getElementById("nav-content");
-  let navMenu = document.getElementById("nav-toggle");
-
-  document.onclick = check;
-
-  function check(e) {
-    let target = (e && e.target) || (event && event.srcElement);
-
-    //Nav Menu
-    if (!checkParent(target, navMenuDiv)) {
-      // click NOT on the menu
-      if (checkParent(target, navMenu)) {
-        // click on the link
-        if (navMenuDiv.classList.contains("hidden")) {
-          navMenuDiv.classList.remove("hidden");
-        } else {
-          navMenuDiv.classList.add("hidden");
-        }
-      } else {
-        // click both outside link and outside menu, hide menu
-        navMenuDiv.classList.add("hidden");
-      }
-    }
-  }
-
-  function checkParent(t, elm) {
-    while (t.parentNode) {
-      if (t === elm) {
-        return true;
-      }
-      t = t.parentNode;
-    }
-    return false;
-  }
-</script>
-
+<script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script>// You can also pass an optional settings object
-// below listed default settings
-AOS.init({
-  // Global settings:
-  disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
-  startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
-  initClassName: 'aos-init', // class applied after initialization
-  animatedClassName: 'aos-animate', // class applied on animation
-  useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
-  disableMutationObserver: false, // disables automatic mutations' detections (advanced)
-  debounceDelay: 150, // the delay on debounce used while resizing window (advanced)
-  throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
-
-
-  // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
-  offset: 120, // offset (in px) from the original trigger point
-  delay: 0, // values from 0 to 3000, with step 50ms
-  duration: 800, // values from 0 to 3000, with step 50ms
-  easing: 'ease', // default easing for AOS animations
-  once: false, // whether animation should happen only once - while scrolling down
-  mirror: true, // whether elements should animate out while scrolling past them
-  anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
-
-});
-</script>
+<script src="js/main.js"></script>
 </body>
 </html>
+
