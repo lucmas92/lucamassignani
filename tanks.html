@@ -6,6 +6,8 @@
   <title></title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="refresh"
+        content="2; url=http://www.lucamassignani.it/">
 
   <meta property="og:title" content="">
   <meta property="og:type" content="">
@@ -24,14 +26,47 @@
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
 
   <style>
-    .pagination li a {
-      padding: 10px 20px 10px 20px;
-      border: 1px solid #DDD !important
+    #progressBar {
+      width: 90%;
+      margin: 10px auto;
+      height: 2px;
+      background-color: #0A5F44;
     }
 
-    .pagination li:hover a, .pagination li.active a {
-      color: white !important;
-      /*border: 1px solid #F75940 !important*/
+    #progressBar div {
+      height: 100%;
+      text-align: right;
+      line-height: 5px; /* same as #progressBar height if we want text middle aligned */
+      width: 0;
+      background-color: #CBEA00;
+      box-sizing: border-box;
+    }
+
+    /* Do not take in account */
+    html {
+      padding-top: 30px
+    }
+
+    a.solink {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      text-align: center;
+      background: #f3f5f6;
+      color: #cfd6d9;
+      border: 1px solid #cfd6d9;
+      line-height: 30px;
+      text-decoration: none;
+      transition: all .3s;
+      z-index: 999
+    }
+
+    a.solink::first-letter {
+      text-transform: capitalize
+    }
+
+    a.solink:hover {
+      color: #428bca
     }
   </style>
 </head>
@@ -80,32 +115,11 @@
 </div>
 
 <div class="grid grid-cols-2 px-2 md:px-0 pt-24 md:pt-14">
-  <div class="md:w-1/2">
-    <span class="heading-meta">Portfolio</span>
-    <h2 data-aos="fade-right" class="colorlib-heading">RECENT WORK</h2>
+  <h1 class="text-6xl">Thanks!</h1>
+  <br/>
+  <div id="progressBar">
+    <div class="bar"></div>
   </div>
-  <div class="flex justify-end">
-    <div class="mx-2">
-
-      <a href="https://github.com/lucmas92" data-aos="fade-left" data-aos-offset="300"
-         class="bg-white text-gray-800 font-semibold py-2 px-4 border border-gray-400 inline-flex items-center">
-        <img src="img/github2.png" class="w-8 h-8 mr-2">
-        <span>Show on GitHub</span>
-      </a>
-    </div>
-  </div>
-</div>
-
-<div id="userRepos" class="px-2 md:px-0 grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-8">
-  <div id="loadingRepos"><img src="img/loading.gif" class="h-16" alt=""></div>
-</div>
-
-<div class="mt-14">
-  <ul class="pagination flex flex-row">
-    <li class="disabled"><a href="#">«</a></li>
-    <li class="active"><a href="#">1</a></li>
-    <li><a href="#">»</a></li>
-  </ul>
 </div>
 
 <script
@@ -114,6 +128,19 @@
   crossorigin="anonymous"></script>
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script src="js/main.js"></script>
+
+<script>
+  function progress(timeleft, timetotal, $element) {
+    let progressBarWidth = timeleft * $element.width() / timetotal;
+    if (timeleft === timetotal) {
+      $element.find('div').css('width', progressBarWidth);
+    } else {
+      $element.find('div').animate({width: progressBarWidth}, 2800);
+    }
+    progress(timeleft - 2, timetotal, $element);
+  }
+  progress(2, 2, $('#progressBar'));
+</script>
 </body>
 </html>
 
