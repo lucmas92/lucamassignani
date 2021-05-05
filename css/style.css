@@ -140,7 +140,7 @@ figure figcaption {
   }
 }
 
-#colorlib-aside #colorlib-logo {
+#colorlib-aside #colorlib-logo, .colorlib-logo {
   text-align: right;
   font-weight: 400;
   font-size: 22px;
@@ -151,12 +151,12 @@ figure figcaption {
 }
 
 @media screen and (max-width: 768px) {
-  #colorlib-aside #colorlib-logo {
+  #colorlib-aside #colorlib-logo, .colorlib-logo{
     margin-bottom: 1em;
   }
 }
 
-#colorlib-aside #colorlib-logo a {
+#colorlib-aside #colorlib-logo a, .colorlib-logo a {
   display: inline-block;
   text-align: center;
   background: #000;
@@ -166,7 +166,7 @@ figure figcaption {
   padding-right: .3em;
 }
 
-#colorlib-aside #colorlib-logo a span {
+#colorlib-aside #colorlib-logo a span, .colorlib-logo a span {
   display: block;
   margin-bottom: 5px;
   text-align: center;

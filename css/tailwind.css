@@ -31961,7 +31961,7 @@ figure figcaption {
   }
 }
 
-#colorlib-aside #colorlib-logo {
+#colorlib-aside #colorlib-logo, .colorlib-logo {
   text-align: right;
   font-weight: 400;
   font-size: 22px;
@@ -31972,12 +31972,12 @@ figure figcaption {
 }
 
 @media screen and (max-width: 768px) {
-  #colorlib-aside #colorlib-logo {
+  #colorlib-aside #colorlib-logo, .colorlib-logo{
     margin-bottom: 1em;
   }
 }
 
-#colorlib-aside #colorlib-logo a {
+#colorlib-aside #colorlib-logo a, .colorlib-logo a {
   display: inline-block;
   text-align: center;
   background: #000;
@@ -31987,7 +31987,7 @@ figure figcaption {
   padding-right: .3em;
 }
 
-#colorlib-aside #colorlib-logo a span {
+#colorlib-aside #colorlib-logo a span, .colorlib-logo a span {
   display: block;
   margin-bottom: 5px;
   text-align: center;
@@ -32280,17 +32280,6 @@ figure figcaption {
   padding: 10px 15px !important;
   border: none;
   font-weight: 400;
-}
-
-#colorlib-hero .flexslider .slider-text > .slider-text-inner .btn.btn-learn {
-  background: transparent;
-  color: #000;
-  border: 1px solid #000;
-}
-
-#colorlib-hero .flexslider .slider-text > .slider-text-inner .btn.btn-learn:hover {
-  background: transparent !important;
-  border: 1px solid #000 !important;
 }
 
 @media screen and (max-width: 768px) {
@@ -32677,11 +32666,6 @@ body.offcanvas #colorlib-main, body.offcanvas .colorlib-nav-toggle {
 
 #get-in-touch {
   padding: 4em 2em 4em 2em;
-}
-
-#get-in-touch .btn-learn {
-  padding: 15px 30px !important;
-  font-size: 13px;
 }
 
 .colorlib-social {

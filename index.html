@@ -34,10 +34,10 @@
 <body class=" bg-white" style="overflow-x: hidden">
 <aside id="colorlib-aside" role="complementary" class="border-r" style="overflow: hidden">
   <i id="closeMenu" class="fas fa-times absolute right-6 top-4 md:hidden cursor-pointer"></i>
-  <h1 id="colorlib-logo"><a href="index.html"><span>Lu</span><span>ca</span></a></h1>
+  <h1 id="colorlib-logo"><a href=".html"><span>Lu</span><span>ca</span></a></h1>
   <nav id="colorlib-main-menu" role="navigation">
     <ul>
-      <li class="colorlib-active"><a href="index.html">Home</a></li>
+      <li class="colorlib-active"><a href=".html">Home</a></li>
       <li><a href="work.html">Work</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
@@ -61,6 +61,19 @@
 
 <div class="w-full bg-white z-30 fixed md:hidden px-4 py-4 shadow-lg">
   <i id="toggleMenu" class="fas fa-bars cursor-pointer"></i>
+  <h1 class="colorlib-logo z-0" style="
+      position: absolute;
+      top:.1em;left:4em;
+      font-size: 12px;
+      padding: .1em .1em;
+      width: fit-content;
+      padding-right: .3em;">
+    <a href=".html" style="letter-spacing: 4px!important;">
+      <span style="margin-bottom: 0">Lu</span>
+      <span style="margin-bottom: 0">ca</span>
+    </a>
+  </h1>
+
 </div>
 
 <div class="flex flex-col items-center pt-14 md:pt-0">
@@ -68,7 +81,8 @@
     <div data-aos="fade-right" id="slide-1"
          style="background-image: url('img/img4.jpg')"
          class="snap-start w-full h-full flex items-center justify-center text-white text-2xl lg:text-4xl font-bold flex-shrink-0 bg-gray-200 relative">
-      <div data-aos="fade-up" class="desc text-center border shadow-md w-3/4 lg:w-1/2 xl:w-2/5 bg-white absolute text-black p-2"
+      <div data-aos="fade-up"
+           class="desc text-center border shadow-md w-3/4 lg:w-1/2 xl:w-2/5 bg-white absolute text-black p-2"
            style="left: 1rem; bottom:1rem; padding:30px">
         <h1 class="mb-0">I build things for the web.</h1>
       </div>
@@ -204,7 +218,8 @@
     <div class="flex">
       <div class="w-full md:w-1/2" data-aos="fade-right" data-aos-delay="300">
         <p class="colorlib-lead">Interested in working together? We should queue up a chat. I’ll buy the coffee.</p>
-        <p><a href="contact.html" class="cursor-pointer btn btn-primary btn-send-message my-2 mx-0 lg:mx-2">Contact me!</a></p>
+        <p><a href="contact.html" class="cursor-pointer btn btn-primary btn-send-message my-2 mx-0 lg:mx-2">Contact
+          me!</a></p>
       </div>
     </div>
   </div>
