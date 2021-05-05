@@ -32,12 +32,8 @@ function requestUserRepos(username){
 
   // GitHub endpoint, dynamically passing in specified username
   const url = `https://api.github.com/users/lucmas92/repos`;
-  console.log(url);
-  // Open a new connection, using a GET request via URL endpoint
-  // Providing 3 arguments (GET/POST, The URL, Async True/False)
 
   xhr.open('GET', url, true);
-  // xhr.setRequestHeader("Authorization", "token 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")
 
   // When request is received
   // Process it here
@@ -65,7 +61,7 @@ function requestUserRepos(username){
       // li.classList.add('p-1')
 
       li.setAttribute("data-aos","fade-right");
-      li.setAttribute("data-aos-offset","300");
+      li.setAttribute("data-aos-offset","150");
 
       // Create the html markup for each li
       li.innerHTML = (`
