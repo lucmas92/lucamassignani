@@ -56,25 +56,8 @@
   </div>
 </aside>
 
-<div class="w-full bg-white z-30 fixed md:hidden px-4 py-4 shadow-lg">
-  <i id="toggleMenu" class="fas fa-bars cursor-pointer"></i>
-  <h3 class="colorlib-logo z-0" style="
-      position: absolute;
-      top:.1em;left:4em;
-      font-size: 12px;
-      padding: .1em .1em;
-      width: fit-content;
-      padding-right: .3em;">
-    <a href="index.html" style="letter-spacing: 4px!important;">
-      <span style="margin-bottom: 0">Lu</span>
-      <span style="margin-bottom: 0">ca</span>
-    </a>
-  </h3>
-
-</div>
-
-<div class="flex flex-col items-center pt-14 md:pt-0">
-  <div class="slider w-full bg-white overflow-x-hidden flex snap-x" style="height:80vh; overflow: hidden">
+<div class="flex flex-col items-center mb-14 md:pt-0">
+  <div class="slider w-full bg-white overflow-x-hidden flex snap-x" style="height:100vh; overflow: hidden">
     <div data-aos="fade-right" id="slide-1"
          style="background-image: url('img/img4.jpg')"
          class="snap-start w-full h-full flex items-center justify-center text-white text-2xl lg:text-4xl font-bold flex-shrink-0 bg-gray-200 relative">
@@ -85,6 +68,25 @@
       </div>
     </div>
   </div>
+</div>
+
+
+<div id="navbar" class="w-full bg-white z-30 md:hidden px-4 py-5 border-t"
+     style="position: -webkit-sticky; position: sticky; top: 0;">
+  <i id="toggleMenu" class="fas fa-bars cursor-pointer"></i>
+  <h3 class="colorlib-logo z-0" style="
+      position: absolute;
+      top:.5em;left:4em;
+      font-size: 12px;
+      padding: .1em .1em;
+      width: fit-content;
+      padding-right: .3em;">
+    <a href="index.html" style="letter-spacing: 4px!important;">
+      <span style="margin-bottom: 0">Lu</span>
+      <span style="margin-bottom: 0">ca</span>
+    </a>
+  </h3>
+
 </div>
 
 <div class="px-2 md:px-0 grid grid-cols-1 lg:grid-cols-2 gap-y-5 lg:gap-y-0 lg:gap-x-5 py-48 align-items-center">
@@ -191,7 +193,6 @@
   </div>
 </div>
 
-
 <div class="flex px-2 md:px-0">
   <div class="md:w-1/2">
     <span class="heading-meta">My work</span>
@@ -226,6 +227,17 @@
         crossorigin="anonymous"></script>
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script src="js/main.js"></script>
+<script>
+  let pos = navbar.offsetTop;
+  document.addEventListener('scroll', function (e) {
+    let navbar = document.getElementById("navbar");
+    if (window.scrollY >= pos) {
+      navbar.classList.add('shadow-lg');
+    } else {
+      navbar.classList.remove('shadow-lg');
+    }
+  });
+</script>
 </body>
 </html>
 

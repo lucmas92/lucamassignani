@@ -4,6 +4,7 @@ AOS.init(
     duration: 1000
   }
 );
+
 function openMenu() {
   $('aside').css('margin-left', '15rem');
 }
