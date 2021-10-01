@@ -94,7 +94,7 @@ app.component('products-list', {
         Link non valido!
       </span>
       <span v-if="customLink.length > 0 && linkCheck">
-        <a :href="linkReferral">https://www.amazon.it/</a>
+        <a target="_blank" :href="linkReferral">https://www.amazon.it/</a>
       </span>
     </div>
     <div class="grid grid-cols-1 2xl:grid-cols-3 xl:grid-cols-2 pt-14 gap-x-12">
