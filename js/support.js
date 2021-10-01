@@ -22,13 +22,14 @@ app.component('products-list', {
       } else {
         this.linkReferral = val.trim()
       }
-      this.linkCheck = false;
+      this.linkCheck = true;
       this.linkReferral += "?tag=" + this.tag
       try {
         const headers = {
           "User-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36",
           "Authority": "www.amazon.it",
-          "Access-Control-Allow-Origin": "*"
+          "Access-Control-Allow-Origin": "*",
+          "referer":"https://www.amazon.it/"
         };
         fetch(this.linkReferral, {headers})
           .then(async response => {
