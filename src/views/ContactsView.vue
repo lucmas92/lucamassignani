@@ -45,9 +45,9 @@
           </v-card-text>
         </v-col>
         <v-col class="mt-lg-12 bg-transparent" cols="12" md="6">
-          <v-textarea name="Messaggio" :rules="messageRules" class="bg-transparent my-2 my-md-4" rounded="0" label="Message"></v-textarea>
-          <v-text-field name="Nome" :rules="nameRules" rounded="0" class="my-2 my-md-4" type="text" label="Name"></v-text-field>
-          <v-text-field name="Email" :rules="emailRules" rounded="0" class="my-2 my-md-4" type="email" label="Email"></v-text-field>
+          <v-textarea name="message" :rules="messageRules" class="bg-transparent my-2 my-md-4" rounded="0" label="Message"></v-textarea>
+          <v-text-field name="name" :rules="nameRules" rounded="0" class="my-2 my-md-4" type="text" label="Name"></v-text-field>
+          <v-text-field name="email" :rules="emailRules" rounded="0" class="my-2 my-md-4" type="email" label="Email"></v-text-field>
           <v-hover>
             <template v-slot:default="{ isHovering, props }">
               <v-btn type="submit" v-bind="props" class="px-8 text-uppercase" rounded="0" variant="outlined"
