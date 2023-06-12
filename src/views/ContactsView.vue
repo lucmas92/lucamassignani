@@ -7,8 +7,8 @@
   <v-card rounded="0" elevation="0" class="pt-16 min-h-100">
     <Rotate text="Contacts"/>
     <Title style="z-index: -1" title="Contacts"/>
-    <v-form name="contactForm" data-netlify="true" @submit.prevent="handleSubmit">
-      <input type="hidden" name="form-name" value="contactForm" />
+    <v-form ref="contactForm" name="contactForm" data-netlify="true" @submit.prevent="handleSubmit">
+      <input type="hidden" name="form-name" value="contactForm"/>
 
       <v-row class="px-12 mt-12 pb-16 mt-md-16 pt-lg-16">
         <v-col class="mt-lg-12 mb-12 mb-md-0" cols="12" md="6">
@@ -45,9 +45,9 @@
           </v-card-text>
         </v-col>
         <v-col class="mt-lg-12 bg-transparent" cols="12" md="6">
-          <v-textarea name="Messaggio" class="bg-transparent" rounded="0" label="Message"></v-textarea>
-          <v-text-field name="Nome" rounded="0" type="text" label="Name"></v-text-field>
-          <v-text-field name="Email" rounded="0" type="email" label="Email"></v-text-field>
+          <v-textarea name="Messaggio" :rules="messageRules" class="bg-transparent my-2 my-md-4" rounded="0" label="Message"></v-textarea>
+          <v-text-field name="Nome" :rules="nameRules" rounded="0" class="my-2 my-md-4" type="text" label="Name"></v-text-field>
+          <v-text-field name="Email" :rules="emailRules" rounded="0" class="my-2 my-md-4" type="email" label="Email"></v-text-field>
           <v-hover>
             <template v-slot:default="{ isHovering, props }">
               <v-btn type="submit" v-bind="props" class="px-8 text-uppercase" rounded="0" variant="outlined"
@@ -72,7 +72,22 @@ import router from "@/router";
 export default defineComponent({
   name: 'ContactsView',
   data: () => ({
+    valid: true,
     works: [],
+    nameRules: [
+      v => !!v || 'Name is required',
+      v => (v && v.length <= 255) || 'Name must be less than 255 characters',
+      v => (v && v.length >= 3) || 'Name must be at least 3 characters',
+    ],
+    emailRules: [
+      v => !!v || 'E-mail is required',
+      v => /.+@.+\..+/.test(v) || 'E-mail must be valid',
+    ],
+    messageRules: [
+      v => !!v || 'Message is required',
+      v => (v && v.length <= 255) || 'Message must be less than 255 characters',
+      v => (v && v.length >= 5) || 'Message must be at least 5 characters',
+    ],
   }),
 
   components: {
@@ -98,15 +113,21 @@ export default defineComponent({
           this.works = data
         })
     },
-    handleSubmit(e) {
+    async handleSubmit(e) {
       e.preventDefault();
+
+      const validate = await this.$refs.contactForm.validate()
+      console.log(validate)
+
+      if (!validate['valid'])
+        return
 
       const myForm = e.target;
       const formData = new FormData(myForm);
 
       fetch("/", {
         method: "POST",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        headers: {"Content-Type": "application/x-www-form-urlencoded"},
         body: new URLSearchParams(formData).toString(),
       })
         .then(() => this.$router.push('/thanks'))
