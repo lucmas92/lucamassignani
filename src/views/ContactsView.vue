@@ -45,9 +45,9 @@
           </v-card-text>
         </v-col>
         <v-col class="mt-lg-12 bg-transparent" cols="12" md="6">
-          <v-textarea class="bg-transparent" rounded="0" label="Message"></v-textarea>
-          <v-text-field rounded="0" type="text" label="Name"></v-text-field>
-          <v-text-field rounded="0" type="email" label="Email"></v-text-field>
+          <v-textarea name="Messaggio" class="bg-transparent" rounded="0" label="Message"></v-textarea>
+          <v-text-field name="Nome" rounded="0" type="text" label="Name"></v-text-field>
+          <v-text-field name="Email" rounded="0" type="email" label="Email"></v-text-field>
           <v-hover>
             <template v-slot:default="{ isHovering, props }">
               <v-btn type="submit" v-bind="props" class="px-8 text-uppercase" rounded="0" variant="outlined"
@@ -101,7 +101,6 @@ export default defineComponent({
     handleSubmit(e) {
       e.preventDefault();
 
-      console.log('submit')
       const myForm = e.target;
       const formData = new FormData(myForm);
 
