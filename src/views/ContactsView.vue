@@ -44,11 +44,18 @@
 
       <v-col class="mt-lg-12 bg-transparent" cols="12" md="6">
 
-        <v-form method="post" ref="contactForm" name="contactForm"
-                data-netlify="true"
-                @submit.prevent="handleSubmit"
-                data-netlify-honeypot="bot-field">
-          <input type="hidden" name="form-name" value="contactForm"/>
+        <v-form
+          ref="contact-form"
+          name="contact-form"
+          method="POST"
+          data-netlify="true"
+          data-netlify-honeypot="bot-field">
+
+          <input
+            type="hidden"
+            name="form-name"
+            value="contact-form"
+          >
           <v-textarea name="Message" :rules="messageRules" class="bg-transparent my-2 my-md-4" rounded="0"
                       label="Message" v-model="formData.message"></v-textarea>
           <v-text-field name="Name" :rules="nameRules" rounded="0" class="my-2 my-md-4" type="text"
@@ -129,11 +136,9 @@ export default defineComponent({
       e.preventDefault();
 
       const validate = await this.$refs.contactForm.validate()
-      console.log(validate)
 
       if (!validate['valid'])
         return
-
 
       fetch("/", {
         method: "POST",
