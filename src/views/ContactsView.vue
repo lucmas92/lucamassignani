@@ -49,7 +49,7 @@
           <v-text-field rounded="0" type="email" label="Email"></v-text-field>
           <v-hover>
             <template v-slot:default="{ isHovering, props }">
-              <v-btn v-bind="props" class="px-8 text-uppercase" rounded="0" variant="outlined"
+              <v-btn type="submit" v-bind="props" class="px-8 text-uppercase" rounded="0" variant="outlined"
                      :class="{ 'text-white bg-black': isHovering, 'text-black bg-white': !isHovering }">
                 Send Message
               </v-btn>
