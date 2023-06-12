@@ -7,7 +7,7 @@
   <v-card rounded="0" elevation="0" class="pt-16 min-h-100">
     <Rotate text="Contacts"/>
     <Title style="z-index: -1" title="Contacts"/>
-    <v-form name="contactForm" data-netlify="true">
+    <v-form name="contactForm" data-netlify="true" @submit.prevent="handleSubmit">
 
       <v-row class="px-12 mt-12 pb-16 mt-md-16 pt-lg-16">
         <v-col class="mt-lg-12 mb-12 mb-md-0" cols="12" md="6">
@@ -96,6 +96,22 @@ export default defineComponent({
           this.works = data
         })
     },
+    handleSubmit(e) {
+      e.preventDefault();
+
+      console.log('submit')
+      const myForm = e.target;
+      const formData = new FormData(myForm);
+
+      fetch("/", {
+        method: "POST",
+        headers: {"Content-Type": "application/x-www-form-urlencoded"},
+        body: new URLSearchParams(formData).toString(),
+      })
+        .then(() => console.log("Form successfully submitted"))
+        .catch((error) => alert(error));
+
+    }
   },
 });
 </script>
