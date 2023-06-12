@@ -136,7 +136,7 @@ export default defineComponent({
     async handleSubmit(e) {
       e.preventDefault();
 
-      const validate = await this.$refs.contactForm.validate()
+      const validate = await this.$refs['contact-form'].validate()
 
       if (!validate['valid'])
         return
