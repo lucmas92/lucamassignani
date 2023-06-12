@@ -45,6 +45,7 @@
       <v-col class="mt-lg-12 bg-transparent" cols="12" md="6">
 
         <v-form
+          @submit.prevent="handleSubmit"
           ref="contact-form"
           name="contact-form"
           method="POST"
