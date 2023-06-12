@@ -44,7 +44,10 @@
 
       <v-col class="mt-lg-12 bg-transparent" cols="12" md="6">
 
-        <v-form ref="contactForm" name="contactForm" data-netlify="true" @submit.prevent="handleSubmit" netlify>
+        <v-form method="post" ref="contactForm" name="contactForm"
+                data-netlify="true"
+                @submit.prevent="handleSubmit"
+                data-netlify-honeypot="bot-field">
           <input type="hidden" name="form-name" value="contactForm"/>
           <v-textarea name="Message" :rules="messageRules" class="bg-transparent my-2 my-md-4" rounded="0"
                       label="Message" v-model="formData.message"></v-textarea>
