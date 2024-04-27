@@ -18,7 +18,7 @@
                 ltr="true"
                 my_image="photo.jpg"
                 mainText="Luca<br/>Massignani"
-                text="Diligent software engineer with 5+ years experience in creating and executing innovative software solutions to enhance business productivity. Highly experienced in all aspects of the software development lifecycle and end-to-end project managment, from concept through to development and delivery"/>
+                text="Ho 7 anni di esperienza come Software Engineer, specializzato in tecnologie come PHP, Laravel, Linux, MySQL, Java, Shell, Python, Vuejs, HTML e Css. Ho partecipato a numerosi progetti di successo, migliorando le performance dei prodotti. Sono in grado di lavorare in modo indipendente e di gestire le aspettative del cliente, fornendo servizi di qualità. Continuo a cercare opportunità per ampliare le mie conoscenze e migliorare le mie abilità"/>
 
         <Space title="Skills"
                ltr="false"
@@ -34,7 +34,6 @@
                                 certain mastery, allowing me to provide added value in the work I do.
                             </p>
                             <v-col cols="6" sm="6">
-                                <h3 class="text-uppercase">BackEnd</h3>
                                 <v-list class="text-grey" density="compact">
                                     <v-list-item class="list">Java</v-list-item>
                                     <v-list-item class="list">PHP</v-list-item>
@@ -43,12 +42,14 @@
                                     <v-list-item class="list">Couchbase</v-list-item>
                                     <v-list-item class="list">Prisma</v-list-item>
                                     <v-list-item class="list">Express</v-list-item>
+                                    <v-list-item class="list">Shell</v-list-item>
                                 </v-list>
                             </v-col>
                             <v-col cols="6" sm="6">
-                                <h3 class="text-uppercase">FrontEnd</h3>
                                 <v-list class="text-grey" density="compact">
                                     <v-list-item class="list">HTML / CSS</v-list-item>
+                                    <v-list-item class="list">Bootstrap</v-list-item>
+                                    <v-list-item class="list">Tailwind</v-list-item>
                                     <v-list-item class="list">VueJS</v-list-item>
                                     <v-list-item class="list">Nuxt 2</v-list-item>
                                 </v-list>
