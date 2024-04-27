@@ -53,8 +53,6 @@
       <router-view/>
       <v-footer class="d-flex flex-column text-grey py-12">
         <div class="d-flex flex-column flex-md-row w-100 align-center px-4">
-          Get connected with me on social networks!
-
           <v-spacer></v-spacer>
           <div>
             <v-btn
@@ -109,10 +107,7 @@ export default {
 
     windowTop: window.top.scrollY,
     icons: [
-      {icon: 'mdi-facebook', link: '#'},
-      {icon: 'mdi-twitter', link: '#'},
       {icon: 'mdi-linkedin', link: 'https://www.linkedin.com/in/luca-massignani-a8a28a197/'},
-      {icon: 'mdi-instagram', link: '#'},
     ]
   }),
   computed: {
