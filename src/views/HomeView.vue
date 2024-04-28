@@ -1,6 +1,6 @@
 <style>
 * {
-    font-family: 'Merriweather Sans', sans-serif !important;
+    font-family: 'Quicksand', sans-serif !important;
 }
 
 .list::before {
