@@ -6,7 +6,7 @@
       <v-sheet max-width="1200px" color="grey-lighten-3" id="cvsheet"
                class="ml-16 mt-12 mt-md-8 mt-lg-16 px-10 px-md-12 pt-8 pt-md-4 pb-16" style="min-height: 90vh">
 
-        <v-btn id="print" @click="print">Print</v-btn>
+        <v-btn id="print" @click="print" icon="mdi-printer"/>
         <!-- INTESTAZIONE-->
         <div class="d-flex my-5">
           <img :src="require('@/assets/foto.jpeg')" alt="Foto Profilo" class="rounded-circle w-25">
