@@ -197,7 +197,7 @@ export default defineComponent({
       setTimeout(() => {
         print();
         this.setNormal();
-      }, 500);
+      }, 1500);
     },
     setPrinterFriendly() {
       this.addClass(document.querySelector('header'), 'd-none')
