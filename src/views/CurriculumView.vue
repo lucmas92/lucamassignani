@@ -194,8 +194,8 @@ export default defineComponent({
   methods: {
     print() {
       this.setPrinterFriendly();
+      print();
       setTimeout(() => {
-        print();
         this.setNormal();
       }, 1500);
     },
