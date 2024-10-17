@@ -18,12 +18,6 @@
               </template>
               Castelgomberto (VI), Italy
             </v-list-item>
-            <v-list-item link href="tel:3495357197">
-              <template v-slot:prepend>
-                <v-icon icon="mdi-phone"></v-icon>
-              </template>
-              349 5357197
-            </v-list-item>
             <v-list-item link href="mailto:massignani.luca@hotmail.it">
               <template v-slot:prepend>
                 <v-icon icon="mdi-mail"></v-icon>
