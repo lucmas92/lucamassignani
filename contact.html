@@ -2,144 +2,236 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <title>Luca Massignani - Software Engineer</title>
-  <meta name="description"
-        content="My name is Luca Massignani! I build things for the web. I'm a software engineer who specializes in building exceptional digital experiences.">
-  <meta name="title"
-        content="My name is Luca Massignani! I build things for the web.">
+    <meta charset="utf-8">
+    <title>Luca Massignani - Solution Developer</title>
+    <meta name="description"
+          content="My name is Luca Massignani! I build things for the web. I'm a solution developer .">
+    <meta name="title"
+          content="My name is Luca Massignani! I build things for the web. I'm a solution developer .">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
-  <link rel="shortcut icon" href="icons/favicon.ico">
+    <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+    <link rel="shortcut icon" href="icons/favicon.ico">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:300,400,500,700" rel="stylesheet">
 
-  <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/regular.min.css"
+          integrity="sha512-8hM9a+2hrLBhOuB3uiy+QIXBsu6Qk+snsP1CboFQW6pdt/yYz0IcDp/+CGv5m39r9doGUc/zw6aBpyLF6XFgzg=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
 
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/tailwind.css">
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/icomoon.css"/>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <style type="text/tailwindcss">
+        @theme {
+            --color-clifford: #da373d;
+        }
+
+        .title {
+            margin-left: 20%;
+            font-size: 250px;
+            color: hsla(0, 0%, 90%, .6);
+            line-height: 200px;
+            top: -5rem;
+            left: -15%;
+            font-family: Playfair Display, Georgia, serif !important;
+            z-index: -1;
+        }
+
+        @media screen and (max-width: 1200px) {
+            .title {
+                font-size: 150px;
+            }
+        }
+
+        @media screen and (max-width: 992px) {
+            .title {
+                top: -9rem;
+                left: -3%;
+                font-size: 100px;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .title {
+                top: -9rem;
+                left: -3%;
+                font-size: 60px;
+            }
+        }
+    </style>
 
 </head>
 
-<body class="pb-24 bg-white" style="overflow-x: hidden">
-<aside id="colorlib-aside" class="border-r" style="overflow: hidden">
-  <i id="closeMenu" class="fas fa-times absolute right-6 top-4 md:hidden cursor-pointer"></i>
-  <h3 id="colorlib-logo"><a href="index.html"><span>Lu</span><span>ca</span></a></h3>
-  <nav id="colorlib-main-menu">
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="work.html">Work</a></li>
-      <li class="colorlib-active"><a href="contact.html">Contact</a></li>
-<!--      <li><a href="support.html">Support</a></li>-->
-      <li><a href="cv.html">CV</a></li>
-    </ul>
-  </nav>
-  <div class="colorlib-footer">
-    <p><small>
-      Copyright &copy;<script>document.write(new Date().getFullYear());</script>
-      <br> All rights reserved
-      <br> This template is made with <i class="fas fa-heart" aria-hidden="true"></i>
-      <br> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<body data-aos-easing="ease" data-aos-duration="600" data-aos-delay="0">
+<div id="colorlib-page">
+    <a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle"><i></i></a>
+    <aside id="colorlib-aside" role="complementary">
+        <h1 id="colorlib-logo"><a href="index.html"><span>Lu</span><span>ca</span></a></h1>
+        <nav id="colorlib-main-menu" role="navigation">
+            <ul>
+                <li>
+                    <a class="nav-item" href="index.html">Home</a>
+                </li>
+                <li class="colorlib-active">
+                    <a class="nav-item" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </aside>
 
-    </small></p>
-    <ul>
-      <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
-      <li><a href="#"><i class="fab fa-instagram-square"></i></a></li>
-      <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-    </ul>
-  </div>
-</aside>
+    <div id="colorlib-main" class="px-6">
+        <div class="colorlib-contact mt-36 md:px-12">
+            <div class="relative">
+                <span data-aos="fade-in"
+                      data-aos-anchor-placement="center-bottom"
+                      class="absolute title aos-init aos-animate">Contacts</span>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8" style="z-index: 99">
+                    <div class="mt-32">
+                        <form action="">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Name">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Email">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Phone">
+                            </div>
+                            <div class="form-group">
+                                <textarea name="" id="message" cols="30" rows="7" class="form-control"
+                                          placeholder="Message"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="mx-2 btn btn-primary btn-learn">
+                                    Invia ⟶
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="text-left mt-32" style="z-index: 100; min-height: 50vh;">
+                        <div>
+                            <div data-aos="fade-left"
+                                 data-aos-anchor-placement="top-center" class="aos-init ml-10 aos-animate">
+                                <div class="text-gray-400 font-medium grid grid-rows-3 gap-4">
+                                    <div class="colorlib-feature colorlib-feature-sm"
+                                         data-animate-effect="fadeInLeft">
+                                            <div class="colorlib-icon">
+                                                <i class="icon-globe-outline"></i>
+                                            </div>
+                                        <div class="colorlib-text">
+                                            <p style="unicode-bidi:bidi-override; direction: rtl;">
+                                                    ti.inangissamacul@ofni
+                                            </p>
+                                        </div>
+                                    </div>
 
-<div class="w-full bg-white z-30 fixed md:hidden px-4 py-5 shadow-lg">
-  <i id="toggleMenu" class="fas fa-bars cursor-pointer"></i>
-  <h1 class="colorlib-logo z-0" style="
-      position: absolute;
-      top:.1em;left:4em;
-      font-size: 12px;
-      padding: .5em .1em;
-      width: fit-content;
-      padding-right: .3em;">
-    <a href="index.html" style="letter-spacing: 4px!important;">
-      <span style="margin-bottom: 0">Lu</span>
-      <span style="margin-bottom: 0">ca</span>
-    </a>
-  </h1>
+                                    <div class="colorlib-feature colorlib-feature-sm"
+                                         data-animate-effect="fadeInLeft">
+                                        <div class="colorlib-icon">
+                                            <i class="icon-map"></i>
+                                        </div>
+                                        <div class="colorlib-text">
+                                            <p>Vicenza 36070, Italia</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="colorlib-feature colorlib-feature-sm"
+                                         data-animate-effect="fadeInLeft">
+                                        <a href="tel:3495357197">
+                                            <div class="colorlib-icon">
+                                                <i class="icon-phone"></i>
+                                            </div>
+                                        </a>
+                                        <div class="colorlib-text">
+                                            <p style="unicode-bidi:bidi-override; direction: rtl;">
+                                                7917 535 943 93+
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-gray-400 py-12 text-center">
+            <p>
+                <small>
+                    Copyright &copy;
+                    <script>document.write(new Date().getFullYear());</script>
+                    —
+                    All rights reserved
+
+                </small></p>
+            <ul>
+                <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram-square"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+            </ul>
+        </div>
+    </div>
 </div>
+</body>
 
-<div class="px-2 md:px-0">
-  <div class="flex pt-24 md:pt-14">
-    <div class="col-md-12">
-      <span class="heading-meta">Read</span>
-      <h2 class="colorlib-heading" data-aos="fade-right" data-aos-duration="1000">Get in Touch</h2>
-    </div>
-  </div>
-  <div class="grid grid-cols-1 lg:grid-cols-2 pt-14 gap-x-12">
-    <div class="order-1 lg:order-2">
-      <div class="colorlib-feature colorlib-feature-sm" data-aos="fade-right" data-aos-duration="1000"
-           data-aos-delay="100"
-           data-animate-effect="fadeInLeft">
-        <div class="colorlib-icon">
-          <i class="far fa-envelope"></i>
-        </div>
-        <div class="colorlib-text">
-          <p><a href="mailto:massignani.luca@hotmail.it">massignani.luca@hotmail.it</a></p>
-        </div>
-      </div>
-      <div class="colorlib-feature colorlib-feature-sm" data-aos="fade-right" data-aos-delay="200">
-        <div class="colorlib-icon">
-          <i class="far fa-map"></i>
-        </div>
-        <div class="colorlib-text">
-          <p>Castelgomberto, 36070 Vicenza, Italia</p>
-        </div>
-      </div>
-      <div class="colorlib-feature colorlib-feature-sm" data-aos="fade-right" data-aos-delay="150">
-        <div class="colorlib-icon">
-          <i class="fas fa-phone"></i>
-        </div>
-        <div class="colorlib-text">
-          <p><a href="tel:3495357197">349.5357197</a></p>
-        </div>
-      </div>
-    </div>
-    <div class="order-2 lg:order-1">
-      <div class="row">
-        <form name="contactForm" action="tanks.html" netlify>
-          <div class="form-group" data-aos="fade-right" data-aos-delay="200">
-            <input type="text" class="form-control w-full my-2 mx-0 lg:mx-2 px-6" placeholder="Name" name="Name" required>
-          </div>
-          <div class="form-group" data-aos="fade-right" data-aos-delay="200">
-            <input type="email" class="form-control w-full my-2 mx-0 lg:mx-2 px-6" placeholder="Email" name="Email" required>
-          </div>
-          <div class="form-group" data-aos="fade-right" data-aos-delay="200">
-            <input type="text" class="form-control w-full my-2 mx-0 lg:mx-2 px-6" placeholder="Phone" name="Phone">
-          </div>
-          <div class="form-group" data-aos="fade-right" data-aos-delay="200">
-            <textarea required name="message" id="message" cols="30" rows="7"
-                      class="form-control w-full my-2 mx-0 lg:mx-2 px-6"
-                      placeholder="Message"></textarea>
-          </div>
-          <div class="form-group" data-aos="fade-right" data-aos-delay="200">
-            <input type="submit" class="cursor-pointer btn btn-primary btn-send-message my-2 mx-0 lg:mx-2" value="Send Message">
-          </div>
-        </form>
-      </div>
-    </div>
-  </div>
-</div>
-
-<iframe class="w-full my-14" height="600px"
-  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11169.474388526149!2d11.383287892635469!3d45.58313448169059!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477f4a474ebfbdab%3A0x7f90a706e4574ca2!2s36070%20Castelgomberto%20VI!5e0!3m2!1sit!2sit!4v1619127752671!5m2!1sit!2sit"
-  style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-
-
-<script
-  src="https://code.jquery.com/jquery-3.6.0.min.js"
-  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-  crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous"></script>
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script src="js/main.js"></script>
-</body>
+<script>
+    AOS.init(
+        {
+            // Global settings:
+            disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+            startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+            initClassName: 'aos-init', // class applied after initialization
+            animatedClassName: 'aos-animate', // class applied on animation
+            useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+            disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+            debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+            throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+
+
+            // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+            offset: 0, // offset (in px) from the original trigger point
+            delay: 0, // values from 0 to 3000, with step 50ms
+            duration: 600, // values from 0 to 3000, with step 50ms
+            easing: 'ease', // default easing for AOS animations
+            once: false, // whether animation should happen only once - while scrolling down
+            mirror: false, // whether elements should animate out while scrolling past them
+            anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+        })
+</script>
+<script>
+
+
+    var burgerMenu = function () {
+
+        $('.js-colorlib-nav-toggle').on('click', function (event) {
+            event.preventDefault();
+            var $this = $(this);
+
+            if ($('body').hasClass('offcanvas')) {
+                $this.removeClass('active');
+                $('body').removeClass('offcanvas');
+            } else {
+                $this.addClass('active');
+                $('body').addClass('offcanvas');
+            }
+        });
+    };
+
+    // Document on load.
+    $(function () {
+        burgerMenu();
+    });
+</script>
 </html>
 
