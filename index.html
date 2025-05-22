@@ -2,230 +2,205 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <title>Luca Massignani - Software Engineer</title>
-  <meta name="description"
-        content="My name is Luca Massignani! I build things for the web. I'm a software engineer who specializes in building exceptional digital experiences.">
-  <meta name="title"
-        content="My name is Luca Massignani! I build things for the web.">
+    <meta charset="utf-8">
+    <title>Luca Massignani - Solution Developer</title>
+    <meta name="description"
+          content="My name is Luca Massignani! I build things for the web. I'm a solution developer .">
+    <meta name="title"
+          content="My name is Luca Massignani! I build things for the web. I'm a solution developer .">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
-  <link rel="shortcut icon" href="icons/favicon.ico">
+    <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+    <link rel="shortcut icon" href="icons/favicon.ico">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:300,400,500,700" rel="stylesheet">
 
-  <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/regular.min.css"
+          integrity="sha512-8hM9a+2hrLBhOuB3uiy+QIXBsu6Qk+snsP1CboFQW6pdt/yYz0IcDp/+CGv5m39r9doGUc/zw6aBpyLF6XFgzg=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
 
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/tailwind.css">
+    <link rel="stylesheet" href="css/style.css"/>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
-  <style>
-    .slider div {
-      background-position: center center;
-      background-size: cover;
-    }
-  </style>
+    <style type="text/tailwindcss">
+        @theme {
+            --color-clifford: #da373d;
+        }
+    </style>
+
 </head>
 
-<body class=" bg-white" style="overflow-x: hidden">
-<aside id="colorlib-aside" class="border-r" style="overflow: hidden">
-  <i id="closeMenu" class="fas fa-times absolute right-6 top-4 md:hidden cursor-pointer"></i>
-  <h1 id="colorlib-logo"><a href="index.html"><span>Lu</span><span>ca</span></a></h1>
-  <nav id="colorlib-main-menu">
-    <ul>
-      <li class="colorlib-active"><a href="index.html">Home</a></li>
-      <li><a href="work.html">Work</a></li>
-      <li><a href="contact.html">Contact</a></li>
-<!--      <li><a href="support.html">Support</a></li>-->
-      <li><a href="cv.html">CV</a></li>
-    </ul>
-  </nav>
-  <div class="colorlib-footer">
-    <p><small>
-      Copyright &copy;<script>document.write(new Date().getFullYear());</script>
-      <br> All rights reserved
-      <br> This template is made with <i class="fas fa-heart" aria-hidden="true"></i>
-      <br> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<body data-aos-easing="ease" data-aos-duration="600" data-aos-delay="0">
+<div id="colorlib-page">
+    <a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle"><i></i></a>
+    <aside id="colorlib-aside" role="complementary">
+        <h1 id="colorlib-logo"><a href="index.html"><span>Lu</span><span>ca</span></a></h1>
+        <nav id="colorlib-main-menu" role="navigation">
+            <ul>
+                <li class="colorlib-active">
+                    <a class="nav-item" href="index.html">Home</a>
+                </li>
+                <li>
+                    <a class="nav-item" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </aside>
 
-    </small></p>
-    <ul>
-      <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
-      <li><a href="#"><i class="fab fa-instagram-square"></i></a></li>
-      <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-    </ul>
-  </div>
-</aside>
-
-<div class="flex flex-col items-center mb-14 md:pt-0">
-  <div class="slider w-full bg-white overflow-x-hidden flex snap-x" style="height:100vh; overflow: hidden">
-    <div data-aos="fade-right" id="slide-1"
-         style="background-image: url('img/img4.jpg')"
-         class="snap-start w-full h-full flex items-center justify-center text-white text-2xl lg:text-4xl font-bold flex-shrink-0 bg-gray-200 relative">
-      <div data-aos="fade-up"
-           class="desc text-center border shadow-md w-3/4 lg:w-1/2 xl:w-2/5 bg-white absolute text-black p-2"
-           style="left: 1rem; bottom:1rem; padding:30px">
-        <h2 class="mb-0">I build things for the web.</h2>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-<div id="navbar" class="w-full bg-white z-30 md:hidden px-4 py-5 border-t"
-     style="position: -webkit-sticky; position: sticky; top: 0;">
-  <i id="toggleMenu" class="fas fa-bars cursor-pointer"></i>
-  <h3 class="colorlib-logo z-0" style="
-      position: absolute;
-      top:.5em;left:4em;
-      font-size: 12px;
-      padding: .1em .1em;
-      width: fit-content;
-      padding-right: .3em;">
-    <a href="index.html" style="letter-spacing: 4px!important;">
-      <span style="margin-bottom: 0">Lu</span>
-      <span style="margin-bottom: 0">ca</span>
-    </a>
-  </h3>
-
-</div>
-
-<div class="px-2 md:px-0 grid grid-cols-1 lg:grid-cols-2 gap-y-5 lg:gap-y-0 lg:gap-x-5 py-48 align-items-center">
-  <div class="">
-    <div data-aos="fade-right" class="about-img" style="background-image: url('img/img5.jpg');">
-      <div data-aos="fade-left" class="z-20 about-img-2" data-aos-delay="150"
-           style="background-image: url('img/img3.jpg');"></div>
-    </div>
-  </div>
-  <div class="" data-aos="fade-right" data-aos-delay="150">
-    <div class="about-desc">
-      <span class="heading-meta">Welcome &amp; Introduce</span>
-      <h3>My name is Luca Massignani!</h3>
-      <p>
-        Diligent software engineer with 5+ years experience in creating and executing innovative software solutions to
-        enhance business productivity.
-        Highly experienced in all aspects of the software development lifecycle and end-to-end project managment, from
-        concept through to development and delivery
-      </p>
-    </div>
-    <div class="fancy-collapse-panel hidden">
-      <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-        <div class="panel panel-default">
-          <div class="panel-heading" role="tab" id="headingOne">
-            <h4 class="panel-title">
-              <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true"
-                 aria-controls="collapseOne">Why choose me?
-              </a>
-            </h4>
-          </div>
-          <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-            <div class="panel-body">
-              <div class="row">
-                <div class="col-md-6">
-                  <p>
-                    I'm a full-stack developer specializing in Laravel and VueJS development.
-                  </p>
+    <div id="colorlib-main" class="px-6">
+        <div class="colorlib-about mt-36 md:px-12">
+            <div class="relative">
+                <span data-aos="fade-in"
+                      data-aos-anchor-placement="center-bottom"
+                      class="absolute title aos-init aos-animate">About</span>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8" style="z-index: 99">
+                    <div>
+                        <img alt="" data-aos="fade-down" data-aos-anchor-placement="center-bottom"
+                             class="w-auto max-w-lg mx-auto rounded-lg aos-init aos-animate"
+                             src="img/photo.ca382301.jpg"
+                             style="max-height: 60vh; max-width: 100%; z-index: 200;">
+                    </div>
+                    <div class="text-left" style="z-index: 100; min-height: 50vh;">
+                        <div data-aos="fade-in" data-aos-delay="200"
+                             class="text-4xl aos-init aos-animate">
+                            Luca<br>Massignani
+                        </div>
+                        <div class="mt-12">
+                            <div class="uppercase rotate ml-6">About</div>
+                            <div data-aos="fade-left"
+                                 data-aos-anchor-placement="top-center" class="aos-init ml-10 aos-animate">
+                                <div class="text-gray-400 font-medium">
+                                    <p>
+                                        Con oltre <strong>otto anni di esperienza</strong> nel ruolo di Software
+                                        Engineer, ho sviluppato
+                                        una solida competenza tecnica e una profonda conoscenza di un ampio spettro di
+                                        tecnologie, tra cui PHP, Laravel, Linux, MySQL, Java, Shell scripting, Python,
+                                        Vue.js, HTML e CSS. Questa versatilità mi ha permesso di affrontare con
+                                        efficacia sfide complesse in ambiti progettuali diversificati, contribuendo
+                                        attivamente alla realizzazione di soluzioni software robuste, scalabili ed
+                                        efficienti.
+                                    </p>
+                                    <p>
+                                        Sono in grado di operare in maniera autonoma, pianificando e gestendo
+                                        il mio lavoro con responsabilità, mantenendo una comunicazione efficace con i
+                                        clienti e assicurando sempre il rispetto delle aspettative in termini di
+                                        qualità, tempi e risultati.
+                                    </p>
+                                    <p>
+                                        Animato da una forte curiosità e da un costante spirito di crescita
+                                        professionale, sono sempre alla ricerca di nuove sfide e opportunità che mi
+                                        consentano di ampliare le mie competenze, esplorare nuove tecnologie e affinare
+                                        le mie capacità tecniche e analitiche.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-6">
-                  <p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language
-                    ocean.</p>
-                </div>
-              </div>
             </div>
-          </div>
         </div>
-      </div>
+        <div class="colorlib-skills mt-24 md:px-12">
+            <div class="relative">
+                <span data-aos="fade-in" id="skills-anchor"
+                      data-aos-anchor-placement="center-bottom"
+                      class="absolute title aos-init aos-animate">Skills</span>
+                <div class="grid grid-rows-2 lg:grid-rows-1 lg:grid-cols-2" style="z-index: 99">
+                    <div class="row-start-2 lg:row-start-1 lg:col-start-1" style="z-index: 100; min-height: 50vh;">
+                        <div data-aos="fade-in" data-aos-delay="200"
+                             class="text-4xl aos-init aos-animate">
+                            Some of my Skills
+                        </div>
+                        <div class="mt-12">
+                            <div class="uppercase rotate ml-6">Skills</div>
+                            <div data-aos="fade-right" data-aos-anchor="#skills-anchor"
+                                 data-aos-anchor-placement="top-center" class="aos-init ml-10 aos-animate">
+                                <div class="text-gray-400 font-medium">
+                                    <p>
+                                        Competenze che arrivano da un'esperienza maturata sul campo, supportata da
+                                        studio
+                                        e formazione continua. Ciascuna di esse rappresenta un'area di conoscenza in cui
+                                        ho raggiunto un buon livello di padronanza, consentendomi di apportare un reale
+                                        valore aggiunto alle attività e ai progetti a cui prendo parte.
+                                    </p>
+                                </div>
+                                <a class="btn btn-primary btn-learn" href="skills.html">Approfondisci ⟶</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row-start-1 lg:row-start-1 lg:col-start-2">
+                        <img alt="" data-aos="fade-down" data-aos-anchor="#skills-anchor"
+                             data-aos-anchor-placement="top-center"
+                             class="w-auto max-w-lg mx-auto rounded-lg  aos-init aos-animate" src="img/work2.jpg"
+                             style="max-height: 60vh; max-width: 100%; z-index: 200;">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="colorlib-work mt-24 md:px-12">
+            <div class="relative">
+                <span data-aos="fade-in" id="works-anchor"
+                      data-aos-anchor-placement="center-bottom"
+                      class="absolute title aos-init aos-animate">Works</span>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8" style="z-index: 99">
+                    <div>
+                        <img alt="" data-aos="fade-down" data-aos-anchor="#works-anchor"
+                             data-aos-anchor-placement="top-center"
+                             class="w-auto max-w-lg mx-auto rounded-lg aos-init aos-animate" src="img/img1.jpg"
+                             style="max-height: 60vh; max-width: 100%; z-index: 200;">
+                    </div>
+                    <div class="text-left" style="z-index: 100; min-height: 50vh;">
+                        <div data-aos="fade-in" data-aos-delay="200"
+                             data-aos-anchor-placement="bottom-bottom"
+                             class="text-4xl aos-init aos-animate">
+                            Recent Works
+                        </div>
+                        <div class="mt-12">
+                            <div class="uppercase rotate ml-6">Works</div>
+                            <div data-aos="fade-left" data-aos-anchor="#works-anchor"
+                                 data-aos-anchor-placement="top-center" class="aos-init ml-10 aos-animate">
+                                <div class="text-gray-400 font-medium">
+                                    <p>
+                                        Qui trovi una raccolta di piccoli progetti e script che ho realizzato nel tempo,
+                                        principalmente per testare idee, imparare nuove tecnologie o automatizzare
+                                        qualche attività noiosa.</p>
+                                    <p>
+                                        Non aspettarti applicazioni complesse o prodotti finiti, ma piuttosto codice
+                                        scritto per curiosità, sperimentazione o crescita personale.
+                                    </p>
+                                    <p>
+                                        Uso questo spazio un po’ come un laboratorio: ci trovi snippet, tool,
+                                        micro-servizi, qualche test su framework o linguaggi che mi interessano
+                                    </p>
+                                </div>
+                                <a class="btn btn-primary btn-learn" href="https://github.com/lucmas92">Approfondisci ⟶</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="text-gray-400 py-12 text-center">
+            <p>
+                <small>
+                    Copyright &copy;
+                    <script>document.write(new Date().getFullYear());</script>
+                    —
+                    All rights reserved
+
+                </small></p>
+            <ul>
+                <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram-square"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+            </ul>
+        </div>
     </div>
-  </div>
 </div>
-
-
-<div class="bg-white flex px-2 mt-48 pt-12 md:px-0">
-  <div class="md:w-1/2">
-    <span class="heading-meta">What I do?</span>
-    <h2 data-aos="fade-right" class="colorlib-heading">Here are some of my skills</h2>
-  </div>
-</div>
-
-
-<div class="bg-white grid grid-cols-1 lg:grid-cols-2 lg:gap-x-5 px-2 md:px-0 pb-14 mb-48 ">
-  <div class="">
-    <div class="colorlib-feature" data-aos="fade-right" data-aos-delay="150" data-aos-offset="100">
-      <div class="colorlib-icon">
-        <img alt="work.jpg" src="img/work.jpg">
-      </div>
-      <div class="colorlib-text">
-        <h3>Java</h3>
-      </div>
-    </div>
-    <div class="colorlib-feature" data-aos="fade-right" data-aos-delay="150" data-aos-offset="100">
-      <div class="colorlib-icon">
-        <img alt="work.jpg" src="img/work.jpg">
-      </div>
-      <div class="colorlib-text">
-        <h3>Python</h3>
-      </div>
-    </div>
-    <div class="colorlib-feature" data-aos="fade-right" data-aos-delay="150" data-aos-offset="100">
-      <div class="colorlib-icon">
-        <img alt="work.jpg" src="img/work.jpg">
-      </div>
-      <div class="colorlib-text">
-        <h3>PHP</h3>
-        <p>
-          LARAVEL FRAMEWORK
-        </p>
-      </div>
-    </div>
-  </div>
-  <div class="">
-    <div class="colorlib-feature" data-aos="fade-right" data-aos-delay="150" data-aos-offset="100">
-      <div class="colorlib-icon">
-        <img alt="work.jpg" src="img/work.jpg">
-      </div>
-      <div class="colorlib-text">
-        <h3>JavaScript</h3>
-      </div>
-    </div>
-    <div class="colorlib-feature" data-aos="fade-right" data-aos-delay="150" data-aos-offset="100">
-      <div class="colorlib-icon">
-        <img alt="work.jpg" src="img/work.jpg">
-      </div>
-      <div class="colorlib-text">
-        <h3>Vuejs</h3>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="flex px-2 md:px-0">
-  <div class="md:w-1/2">
-    <span class="heading-meta">My work</span>
-    <h2 data-aos="fade-right" class="colorlib-heading">RECENT WORK</h2>
-  </div>
-
-</div>
-
-<div id="userRepos" class="px-2 md:px-0 grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-8">
-  <div id="loadingRepos"><img src="img/loading.gif" class="h-16" alt="loading"></div>
-</div>
-
-<div id="get-in-touch" class="bg-white py-48">
-  <div class="colorlib-narrow-content">
-    <div class="flex">
-      <div class="w-full md:w-1/2" data-aos="fade-right">
-        <h2 class="heading-meta">GET IN TOUCH</h2>
-      </div>
-    </div>
-    <div class="flex">
-      <div class="w-full md:w-1/2" data-aos="fade-right" data-aos-delay="150">
-        <p class="colorlib-lead">Interested in working together? We should queue up a chat. I’ll buy the coffee.</p>
-        <p><a href="contact.html" class="cursor-pointer btn btn-primary btn-send-message my-2 mx-0 lg:mx-2">Contact
-          me!</a></p>
-      </div>
-    </div>
-  </div>
-</div>
+</body>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
@@ -233,17 +208,53 @@
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script src="js/main.js"></script>
 <script>
-  let pos = navbar.offsetTop;
-  document.addEventListener('scroll', function (e) {
-    let navbar = document.getElementById("navbar");
-    if (window.scrollY >= pos) {
-      navbar.classList.add('shadow-lg');
-    } else {
-      navbar.classList.remove('shadow-lg');
-    }
-  });
+    AOS.init(
+        {
+            // Global settings:
+            disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+            startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+            initClassName: 'aos-init', // class applied after initialization
+            animatedClassName: 'aos-animate', // class applied on animation
+            useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+            disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+            debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+            throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+
+
+            // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+            offset: 0, // offset (in px) from the original trigger point
+            delay: 0, // values from 0 to 3000, with step 50ms
+            duration: 600, // values from 0 to 3000, with step 50ms
+            easing: 'ease', // default easing for AOS animations
+            once: false, // whether animation should happen only once - while scrolling down
+            mirror: false, // whether elements should animate out while scrolling past them
+            anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+        })
 </script>
-</body>
+<script>
+
+
+    var burgerMenu = function () {
+
+        $('.js-colorlib-nav-toggle').on('click', function (event) {
+            event.preventDefault();
+            var $this = $(this);
+
+            if ($('body').hasClass('offcanvas')) {
+                $this.removeClass('active');
+                $('body').removeClass('offcanvas');
+            } else {
+                $this.addClass('active');
+                $('body').addClass('offcanvas');
+            }
+        });
+    };
+
+    // Document on load.
+    $(function () {
+        burgerMenu();
+    });
+</script>
 </html>
 
-<!--npx tailwindcss-cli@latest build ./css/style.css -o ./css/tailwind.css-->
